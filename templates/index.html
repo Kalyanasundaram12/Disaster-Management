@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+      <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home | IDR</title>
+  </head>
+  <body>
+    <div class="">
+      <nav class="nav1">
+        <h2>IMPROVED DISASTER RESPONSE WITH REAL TIME LOCATION MONITORING</h2>
+      </nav>
+      <header>
+        <img class="logo" src="static/logo.png" alt="logo" />
+        <nav>
+          <ul class="nav2">
+            <li><a href="#1">Home</a></li>
+            <li><a href="#2">About Us</a></li>
+            <li><a href="#3">Get involved</a></li>
+          </ul>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <a class="btn" href="#" target="_blank"><button>Donate Now</button></a>
+      </header>
+    </div>
+    <section class="about-section" id="2">
+        <h1>About This Application </h1>
+        <p>Disaster Management Application helps you tell us the problems you are facing during the time
+        of disaster and natural calamities</p>
+        <p>It is hard to face any sort of emergency and disaster as they occur suddenly in our lives. But at the same time,
+            we can certainly reduce their negative consequences through well-thought-out plans and strong preparations.</p>
+    </section>
+    <hr>
+    <section id="1">
+      <form class="frm" name="sos" id="sos" action="/guide" method="POST" >
+        <table>
+            <tr>
+                <td>Cause of Distress:</td>
+                <td>
+                    <select class="cause" name="disaster" required>
+                        <option></option>
+                        <option>Floods</option>
+                        <option>Earthquake</option>
+                        <option>Plague</option>
+                        <option>Covid-19</option>
+                        <option>Others</option>
+                    </select>
+                </td>
+            </tr>
+            </table>
+            <h1 class="specify">Specify Resources:</h1>
+            <table>
+            <tr>
+                <td>Food and Water:</td>
+                <td><input class="inpt1" type="number" name="FW" required></td>
+            </tr>
+            <tr>
+                <td>Medicine Units:</td>
+                <td><input class="inpt2" type="number" name="Med" required></td>
+            </tr>
+            <tr>
+                <td>Add a personal note:</td>
+                <td>
+                    <textarea class="note" name="note" id="note" cols="25" rows="5" placeholder="Important note (if any)"></textarea>
+                </td>
+            </tr>
+        </table>
+        <input class="btn" type="image" src="https://www.pngitem.com/pimgs/m/353-3531325_submit-now-png-transparent-images-submit-button-png.png" height="100px"/>
+      </form>
+        <section class="get-involved" id="3">
+        <h1>Get Involved </h1>
+        <p>Get involved with us by donating us </p>
+        <a class="mil" href="mailto:abinav936@gmail.com"><button>Contact us</button></a>
+        </section>
+        <div class="footer">
+        <p>&copy; Kalyanasundaram V. All rights Reserved.</p>
+        </div>
+    </section>
+  </body>
+</html>
