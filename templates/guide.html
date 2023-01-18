@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home | IDR</title>
+  </head>
+  <body>
+    <div class="">
+      <nav class="nav1">
+        <h2>IMPROVED DISASTER RESPONSE WITH REAL TIME LOCATION MONITORING</h2>
+      </nav>
+      <header>
+        <img class="logo" src="static/logo.png" alt="logo" />
+        <nav>
+          <ul class="nav2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Get involved</a></li>
+          </ul>
+        </nav>
+        <a class="btn" href="#"><button>Donate Now</button></a>
+      </header>
+    </div>
+    <hr>
+    <h1>Your Alert has been raised to the nearest resource provider.
+      Support crew with the required items will be arriving shortly.</h1>
+    <div>
+      <table>
+          <tr>
+            <td>Calamity:-</td>
+            <td>{{ Calamity }}</td>
+        </tr>
+          <tr>
+            <td>Required Food & Water:-</td>
+            <td>{{ FW }}</td>
+        </tr>
+          <tr>
+            <td>Required Medicine:-</td>
+            <td>{{ Med }}</td>
+        </tr>
+          <tr>
+            <td>Note:-</td>
+            <td>{{ Note }}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
