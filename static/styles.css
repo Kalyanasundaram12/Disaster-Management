@@ -1,0 +1,175 @@
+*
+{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+.nav1
+{
+    background-color: black;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.nav1 h2
+{
+    font-size: 20px;
+    margin: 0;
+}
+/* .nav2
+{
+    display: flex;
+    word-spacing: 20px;
+    justify-content: space-between;
+    padding-left: 500px;
+} */
+header
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 2%;
+
+}
+li, a, button
+{
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.logo
+{
+    cursor: pointer;
+    width: 100px;
+    margin-right: auto;
+    mix-blend-mode: color-burn;
+}
+.nav2
+{
+    list-style: none;
+
+
+}
+.nav2 li
+{
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: 15px;
+    margin-right: 45px;
+}
+.nav2 li a
+{
+    transition: all 0.3s ease 0s;
+    color:black;
+    border-radius:10px;
+    font-weight: bold;
+}
+.nav2 li a:hover
+{
+    color: red;
+}
+button
+{
+    padding: 9px 25px;
+    background-color: rgb(255, 204, 0);
+    border: none;
+    color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 900;
+}
+button:hover
+{
+    background-color: rgb(255, 111, 111);
+}
+.nav1:hover
+{
+    color: rgb(255, 204, 0);
+}
+.ftr
+{
+    display: flex;
+    direction: column;
+}
+/* .nav2 img
+{
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+} */
+.frm
+{
+    margin-left: 45px;
+    margin-top: 40px;
+    font-size: 25px;
+    color:grey;
+}
+.inpt1
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.inpt2
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.note
+{
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.cause
+{
+    margin-left: 30px;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+h1
+{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    font-weight: 800;
+    font-size: 45px;
+    color: red;
+}
+.about-section {
+  padding: 25px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.footer {
+  padding-top: 2%;
+  text-align: center;
+}
+.get-involved {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.mil{
+    color:white;
+}
